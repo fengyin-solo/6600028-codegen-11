@@ -4,6 +4,7 @@ import { useFluidStore } from './store/fluid'
 import { PRESETS } from './utils/sph-engine'
 import FluidCanvas from './components/FluidCanvas.vue'
 import ControlPanel from './components/ControlPanel.vue'
+import ExperimentReport from './components/ExperimentReport.vue'
 
 const store = useFluidStore()
 
@@ -28,8 +29,9 @@ onMounted(() => {
       </div>
 
       <!-- Right: Controls -->
-      <div class="flex-shrink-0">
+      <div class="flex-shrink-0 flex flex-col gap-3">
         <ControlPanel />
+        <ExperimentReport />
       </div>
     </div>
 
